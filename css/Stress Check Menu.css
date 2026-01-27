@@ -1,0 +1,217 @@
+html {
+    font-size: 62.5%;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C8F7FF;
+    border-top: #000 solid 2px;
+    padding: 10px 20px 0;
+
+    .logo {
+        width: 120px;
+    }
+
+    .hamburger {
+        color: #000;
+        background-color: #fff;
+        text-decoration: none;
+    }
+}
+
+.profileWrap {
+    height: 125px;
+    margin: 20px 20px 30px;
+    border: #d9d9d9 solid 1px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+
+    .profileContent {
+        display: flex;
+        padding: 23px 20px;
+
+        .profileImg {
+            width: 65px;
+            height: 65px;
+            border-radius: 100%;
+        }
+
+        .profileInfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 15px;
+
+            .profileNum {
+                font-size: 1.2rem;
+            }
+
+            .profileName {
+                font-size: 2.4rem;
+            }
+
+            .profileId {
+                padding-left: 24px;
+                position: relative;
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: #000;
+                border: #d9d9d9 solid 1px;
+                border-radius: 5px;
+
+                &::before {
+                    margin: 0 auto;
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    padding: 0;
+                    width: 24px;
+                    height: 24px;
+                    background-image: url(../images/menu_icon.png);
+                }
+            }
+        }
+    }
+}
+
+.taskWrap {
+    position: relative;
+    height: 110px;
+    margin: 30px 20px 30px;
+    padding: 10px 0;
+    border: #d9d9d9 solid 1px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+
+    .taskTitle {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        padding: 0 20px;
+
+        h3 {
+            font-size: 1.4rem;
+            letter-spacing: -5%;
+        }
+    }
+
+    .border {
+        position: absolute;
+        display: block;
+        z-index: 10;
+        top: 35px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    .taskInner {
+        /* margin-top: px; */
+        padding: 5px 20px 0;
+
+        .backlog {
+            font-size: 1rem;
+            color: #fff;
+
+            span {
+                background-color: #5E70FC;
+                padding: 2px 5px;
+
+            }
+        }
+
+        .tasks {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+.thantWrap {
+    position: relative;
+    height: 150px;
+    margin: 30px 20px 20px;
+    padding: 10px 0;
+    border: #d9d9d9 solid 1px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+
+    .thankTitle {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        h3 {
+            font-size: 1.4rem;
+        }
+    }
+
+    .border {
+        position: absolute;
+        display: block;
+        z-index: 10;
+        top: 40px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
+    }
+}
+
+.accordion {
+    padding: 0 19px;
+    margin: 10px 0;
+
+    .accordionWrap {
+        font-size: 2rem;
+    }
+
+    .accordionContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.6rem;
+        margin: 20px 0;
+
+    }
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5eaee;
+    height: 75px;
+
+    .footerLi {
+        display: flex;
+        gap: 32px;
+        justify-content: space-evenly;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style-type: none;
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
