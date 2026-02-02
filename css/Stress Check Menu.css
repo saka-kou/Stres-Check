@@ -68,10 +68,6 @@ header {
     }
 }
 
-/* .accordion::details-content {} */
-
-/* .accordion[open]::details-content {} */
-
 .profileWrap {
     height: 125px;
     margin: 20px 20px 30px;
@@ -131,13 +127,14 @@ header {
     position: relative;
     height: 110px;
     margin: 30px 20px 30px;
-    padding: 10px 0;
+    padding: 5px 0 0 0;
     border: #d9d9d9 solid 1px;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 
     .taskTitle {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         margin-bottom: 12px;
         padding: 0 20px;
@@ -181,7 +178,53 @@ header {
             p {
                 font-size: 1.4rem;
             }
+
         }
+    }
+}
+
+.show {
+    display: inline-block;
+    width: 120px;
+    height: 25px;
+    border: #d9d9d9 solid 1px;
+    padding: 4px 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.show::after {
+    content: "▼";
+    position: absolute;
+    right: 33px;
+    top: 20px;
+    transform: translateY(-60%) rotate(-90deg);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
+
+.show.open::after {
+    transform: translateY(-60%) rotate(0);
+}
+
+#taskSelect {
+    position: relative;
+
+    .todo {
+        display: none;
+        margin-top: 20px;
+    }
+
+    .done {
+        display: none;
+        margin-top: 20px;
     }
 }
 
@@ -202,6 +245,19 @@ header {
         h3 {
             font-size: 1.4rem;
         }
+
+        .show::after {
+            position: absolute;
+            right: 33px;
+            top: 25px;
+            transform: translateY(-60%) rotate(-90deg);
+            transition: transform 0.3s ease;
+            pointer-events: none;
+        }
+
+        .show.open::after {
+            transform: translateY(-60%) rotate(0);
+        }
     }
 
     .border {
@@ -213,6 +269,20 @@ header {
         bottom: 0;
         left: 0;
         border-top: 1px solid rgba(0, 0, 0, 0.25);
+    }
+}
+
+#thankSelect {
+    position: relative;
+
+    .todo {
+        display: none;
+        margin-top: 20px;
+    }
+
+    .done {
+        display: none;
+        margin-top: 20px;
     }
 }
 
