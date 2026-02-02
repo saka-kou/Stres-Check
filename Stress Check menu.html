@@ -2,19 +2,44 @@
 <html lang="jp">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ストレスチェックメニュー</title>
 </head>
 <link rel="stylesheet" href="css/ress.css">
 <link rel="stylesheet" href="css/Stress Check Menu.css">
+<script defer src="js/Stress Check Menu.js"></script>
+
 
 <body>
     <header>
         <h1><img src="images/logo.png" alt="すとふりーロゴ" class="logo"></h1>
-        <a href="#" class="hamburger"><img src="images/menu.png" alt="メニューアイコン"></a>
+        <div class="hamburgerWrap">
+            <!-- ハンバーガーメニューに動きをつける -->
+            <input type="checkbox" id="input" class="hamburger">
+
+            <label for="input"><img src="images/menu.png" alt="メニューアイコン" class="menuIcon"></label>
+            <nav class="nav">
+                <details class="accordion">
+                    <summary class="accordionWrap">よく使うアプリ</summary>
+                    <div class="accordionContent">
+                        <p>給与明細</p>
+                        <a href="#"><img src="images/arrow.png" alt="矢印"></a>
+                    </div>
+                </details>
+                <details class="accordion">
+                    <summary class="accordionWrap">すべてのアプリ</summary>
+                    <div class="accordionContent">
+                        <p>給与明細</p>
+                        <a href="#"><img src="images/arrow.png" alt="矢印"></a>
+                    </div>
+                </details>
+            </nav>
+        </div>
+
     </header>
-    <main>
+    <main class="main">
         <div class="profileWrap">
             <div class="profileContent">
                 <h2><img src="images/poisonDog.jpg" alt="毒トイプードル" class="profileImg"></h2>
@@ -52,22 +77,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="hamburgerWrap">
-            <details class="accordion">
-                <summary class="accordionWrap">よく使うアプリ</summary>
-                <div class="accordionContent">
-                    <p>給与明細</p>
-                    <a href="#"><img src="images/arrow.png" alt="矢印"></a>
-                </div>
-            </details>
-            <details class="accordion">
-                <summary class="accordionWrap">すべてのアプリ</summary>
-                <div class="accordionContent">
-                    <p>給与明細</p>
-                    <a href="#"><img src="images/arrow.png" alt="矢印"></a>
-                </div>
-            </details>
-        </div> -->
     </main>
     <footer class="footer">
         <nav>
