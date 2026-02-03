@@ -68,6 +68,7 @@ header {
     }
 }
 
+
 .profileWrap {
     height: 125px;
     margin: 20px 20px 30px;
@@ -216,16 +217,7 @@ header {
 
 #taskSelect {
     position: relative;
-
-    .todo {
-        display: none;
-        margin-top: 20px;
-    }
-
-    .done {
-        display: none;
-        margin-top: 20px;
-    }
+    width: 100%;
 }
 
 .thantWrap {
@@ -274,15 +266,31 @@ header {
 
 #thankSelect {
     position: relative;
+    width: 100%;
+}
 
-    .todo {
-        display: none;
-        margin-top: 20px;
-    }
+.todo {
+    width: 100%;
+    /* display: none; */
+    margin-top: 20px;
+}
 
-    .done {
-        display: none;
-        margin-top: 20px;
+.done {
+    /* display: none; */
+    margin-top: 20px;
+}
+
+.select::picker(select) {
+    appearance: base-select;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 8px 0;
+    padding: 4px 5px;
+    background-color: #cf256d;
+    transition: scale 0.2s;
+
+    &:hover {
+        scale: 1.05;
     }
 }
 
