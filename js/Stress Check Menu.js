@@ -2,7 +2,14 @@ const taskSelect = document.getElementById("taskSelect");
 const thankSelect = document.getElementById("thankSelect");
 const taskShow = taskSelect.closest(".show");
 const thankShow = thankSelect.closest(".show");
+const profileNum = document.getElementById("profileNum");
 
+window.addEventListener("DOMContentLoaded", () => {
+    const saved = localStorage.getItem("savaData");
+    if (saved) {
+        profileNum.textContent = saved;
+    }
+});
 
 taskSelect.addEventListener("mousedown", () => {
     taskShow.classList.add("open");

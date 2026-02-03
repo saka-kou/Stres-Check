@@ -45,7 +45,7 @@
             <div class="profileContent">
                 <h2><img src="images/poisonDog.jpg" alt="毒トイプードル" class="profileImg"></h2>
                 <div class="profileInfo">
-                    <p class="profileNum">2000094075</p>
+                    <p id="profileNum"></p>
                     <h3 class="profileName">ストレス太郎</h3>
                     <a href="#" class="profileId">従業員情報</a>
                 </div>
@@ -57,8 +57,9 @@
                     <h3>あなたのタスク</h3>
                     <div class="show">
                         <select id="taskSelect" class="select">
-                            <option value="todo" class="todo">未対応のタスク</option>
-                            <option value="done" class="done">対応済のタスク</option>
+                            <option value="todo" class="todo">未対応</option>
+                            <hr>
+                            <option value="done" class="done">対応済</option>
                         </select>
                     </div>
                 </div>
@@ -80,6 +81,7 @@
                         <div class="show">
                             <select id="thankSelect" class="select">
                                 <option value="todo" class="todo">未対応</option>
+                                <hr>
                                 <option value="done" class="done">対応済</option>
                             </select>
                         </div>
