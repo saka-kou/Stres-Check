@@ -1,7 +1,13 @@
-const num = document.getElementById("loginNum");
+const inputNum = document.getElementById("loginNum");
 const savaBtn = document.getElementById("savaBtn");
 
+inputNum.addEventListener("input", () => {
+    inputNum.value = inputNum.value.replace(/\D/g, "")
+});
+
+
 savaBtn.addEventListener("click", () => {
-    const value = num.value;
+    const value = inputNum.value;
     localStorage.setItem("savaData", value);
 });
+
