@@ -342,6 +342,8 @@ header {
         display: flex;
         gap: 32px;
         justify-content: space-evenly;
+        position: sticky;
+        bottom: 0;
 
         li {
             display: flex;
@@ -351,6 +353,11 @@ header {
 
             p {
                 font-size: 1.4rem;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
             }
         }
     }
