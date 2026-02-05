@@ -220,15 +220,20 @@ header {
     position: relative;
     height: 150px;
     margin: 30px 20px 20px;
-    padding: 7px 0;
+    padding: 0 0 7px;
     border: #d9d9d9 solid 1px;
     border-radius: 5px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    overflow: scroll;
+
 
     .thankTitle {
         display: flex;
         justify-content: space-between;
-        padding: 0 20px;
+        position: sticky;
+        background-color: #fff;
+        top: 0;
+        padding: 10px 20px 5px;
 
         h3 {
             font-size: 1.4rem;
@@ -258,13 +263,38 @@ header {
         left: 0;
         border-top: 1px solid rgba(0, 0, 0, 0.25);
     }
+
+    .thankInner {
+        padding: 0 20px 0;
+
+        .thanks {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: space-between;
+
+            .thankContent {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p {
+                    font-size: 1.4rem;
+
+                }
+            }
+
+        }
+    }
+
 }
 
 #taskSelect {
     position: relative;
     appearance: base-select;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 
 #taskSelect::picker(select) {
