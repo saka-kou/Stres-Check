@@ -6,8 +6,6 @@ const before = document.querySelector(".thankBefore");
 const main = document.querySelector(".main");
 
 console.log(thankText);
-// console.log(thankContent);
-
 
 num.addEventListener("input", () => {
     num.value = num.value.replace(/\D/g, "")
