@@ -78,11 +78,12 @@ header {
 
     .profileContent {
         display: flex;
+        align-items: center;
         padding: 23px 20px;
 
         .profileImg {
-            width: 65px;
-            height: 65px;
+            width: 70px;
+            height: 70px;
             border-radius: 100%;
         }
 
@@ -92,8 +93,9 @@ header {
             justify-content: center;
             margin-left: 15px;
 
-            .profileNum {
-                font-size: 1.2rem;
+            #profileNum {
+                font-size: 1.5rem;
+                padding-left: 3px;
             }
 
             .profileName {
@@ -102,6 +104,8 @@ header {
 
             .profileId {
                 padding-left: 24px;
+                height: 25px;
+                line-height: 22px;
                 position: relative;
                 font-size: 1.4rem;
                 text-decoration: none;
