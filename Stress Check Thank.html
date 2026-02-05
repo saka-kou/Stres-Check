@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ストレスチェックメニュー</title>
+</head>
+<link rel="stylesheet" href="css/ress.css">
+<link rel="stylesheet" href="css/Stress Check Menu.css">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right" />
+<script defer src="js/Stress Check Menu.js"></script>
+
+
+<body>
+    <header>
+        <h1><img src="images/logo.png" alt="すとふりーロゴ" class="logo"></h1>
+        <div class="hamburgerWrap">
+            <!-- ハンバーガーメニューに動きをつける -->
+            <input type="checkbox" id="input" class="hamburger">
+
+            <label for="input"><img src="images/menu.png" alt="メニューアイコン" class="menuIcon"></label>
+            <nav class="nav">
+                <details class="accordion">
+                    <summary class="accordionWrap">よく使うアプリ</summary>
+                    <div class="accordionContent">
+                        <p>給与明細</p>
+                        <a href="#"><img src="images/arrow.png" alt="矢印"></a>
+                    </div>
+                </details>
+                <details class="accordion">
+                    <summary class="accordionWrap">すべてのアプリ</summary>
+                    <div class="accordionContent">
+                        <p>給与明細</p>
+                        <a href="#"><img src="images/arrow.png" alt="矢印"></a>
+                    </div>
+                </details>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="profileWrap">
+            <div class="profileContent">
+                <h2><img src="images/poisonDog.jpg" alt="毒トイプードル" class="profileImg"></h2>
+                <div class="profileInfo">
+                    <p id="profileNum"></p>
+                    <h3 class="profileName">ストレス太郎</h3>
+                    <a href="#" class="profileId">従業員情報</a>
+                </div>
+            </div>
+        </div>
+        <div class="taskWrap">
+            <div class="taskContent">
+                <div class="taskTitle">
+                    <h3>あなたのタスク</h3>
+                    <div class="show">
+                        <select id="taskSelect" class="select">
+                            <option value="todo" class="todo">未対応</option>
+                            <hr>
+                            <option value="done" class="done">対応済</option>
+                        </select>
+                    </div>
+                </div>
+                <span class="border"></span>
+                <div class="taskInner">
+                    <p class="backlog"><span>未対応</span></p>
+                    <div class="tasks">
+                        <p>シフト提出</p>
+                        <a href="#"><img src="images/arrow.png" alt="矢印"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="thantWrap">
+                <div>
+                    <div class="thankTitle">
+                        <h3>あなたへの感謝</h3>
+                        <div class="show">
+                            <select id="thankSelect" class="select">
+                                <option value="todo" class="todo">未対応</option>
+                                <hr>
+                                <option value="done" class="done">対応済</option>
+                            </select>
+                        </div>
+                    </div>
+                    <span class="border"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul class="footerLi">
+                <li>
+                    <a href="#"><img src="images/home_icon.png" alt="ホームアイコン"></a>
+                    <p>ホーム</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/thank_icon.png" alt="感謝を送るアイコン"></a>
+                    <p>感謝を送る</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/bell_icon.png" alt="お知らせアイコン"></a>
+                    <p>お知らせ</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/account_icon.png" alt="アカウントアイコン"></a>
+                    <p>アカウント</p>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

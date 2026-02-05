@@ -262,7 +262,7 @@ header {
 
 #taskSelect {
     position: relative;
-    /* appearance: base-select; */
+    appearance: base-select;
     align-items: center;
     width: 100%;
 }
