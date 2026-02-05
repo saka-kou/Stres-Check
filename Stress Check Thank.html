@@ -12,10 +12,13 @@
 </head>
 
 <body>
-    <header>
+    <div class="thankBefore">
+        <h1>感謝をおくったよ！</h1>
+        <a href="Stress Check menu.html">ホームに戻る</a>
+    </div>
+
+    <main class="main">
         <h1 class="title">サンクスカード</h1>
-    </header>
-    <main>
         <div class="num">
             <h3>社員番号</h3>
             <input type="text" id="num" class="input">
@@ -27,16 +30,22 @@
         </div>
         <div class="thanks To">
             <h3>感謝した人</h3>
-            <input type="text" class="input">
+            <input type="text" list="thank_you" onfocus="this.value=''" onchange="this.blur()" class="input">
+            <datalist id="thank_you" class="input">
+                <option value="細川 永遠"></option>
+                <option value="福島 駿弥"></option>
+                <option value="坂口 晃平"></option>
+            </datalist>
         </div>
-        <div class="thankContent">
+        <div class="thankContentt">
             <h3>感謝したこと</h3>
-            <textarea class="thankInput"></textarea>
+            <textarea id="thankText" class="thankInput"></textarea>
         </div>
-        <h2>
-            <button class="thankBtn">Thank you!</button>
+        <h2 class="centerThank">
+            <button id="savaBtn" class="thankBtn">Thank you!</button>
         </h2>
     </main>
+
     <footer class="footer">
         <nav>
             <ul class="footerLi">

@@ -5,7 +5,6 @@ inputNum.addEventListener("input", () => {
     inputNum.value = inputNum.value.replace(/\D/g, "")
 });
 
-
 savaBtn.addEventListener("click", () => {
     const value = inputNum.value;
     localStorage.setItem("savaData", value);
