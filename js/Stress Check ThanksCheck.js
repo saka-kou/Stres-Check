@@ -7,4 +7,5 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+
 // thank.insertAdjacentHTML("beforeend", <p></p>);

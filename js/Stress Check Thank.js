@@ -4,12 +4,14 @@ const thankText = document.getElementById("thankText");
 const savaBtn = document.getElementById("savaBtn");
 const before = document.querySelector(".thankBefore");
 const main = document.querySelector(".main");
+const family = document.getElementById("familyName");
 
-console.log(thankText);
+// console.log(thankText);
+// console.log(family);
 
-num.addEventListener("input", () => {
-    num.value = num.value.replace(/\D/g, "")
-});
+// num.addEventListener("input", () => {
+//     num.value = num.value.replace(/\D/g, "")
+// });
 
 savaBtn.addEventListener("click", () => {
     if (thankText.value === "") {
@@ -17,6 +19,8 @@ savaBtn.addEventListener("click", () => {
     }
     else {
         const value = thankText.value;
+        const familyName = family.value;
+        localStorage.setItem("savaName", familyName);
         localStorage.setItem("savaThank", value);
         main.classList.add("thankBefore");
         before.classList.remove("thankBefore");
