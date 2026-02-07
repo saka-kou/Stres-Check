@@ -58,6 +58,13 @@ main {
         border: rgba(0, 0, 0, 0.25) solid 1px;
     }
 
+    #date {
+        width: 180px;
+        padding: 4px;
+        border-radius: 10px;
+        border: rgba(0, 0, 0, 0.25) solid 1px;
+    }
+
     .thankInput {
         width: 100%;
         height: 100px;

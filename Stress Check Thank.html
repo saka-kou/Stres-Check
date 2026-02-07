@@ -28,9 +28,13 @@
             <input type="text" id="familyName" class="input" placeholder="性">
             <input type="text" class="input" placeholder="名">
         </div>
+        <div class="name">
+            <h3>感謝した日</h3>
+            <input type="date" id="date" class="input">
+        </div>
         <div class="thanks To">
             <h3>感謝した人</h3>
-            <input type="text" list="thank_you" onfocus="this.value=''" onchange="this.blur()" class="input">
+            <input type="text" id="human" class="input" list="thank_you" onfocus="this.value=''" onchange="this.blur()">
             <datalist id="thank_you" class="input">
                 <option value="細川 永遠"></option>
                 <option value="福島 駿弥"></option>
