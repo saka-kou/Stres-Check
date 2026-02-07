@@ -5,13 +5,13 @@ const thankShow = thankSelect.closest(".show");
 const profileNum = document.getElementById("profileNum");
 const family = document.getElementById("familyName");
 
-
 window.addEventListener("DOMContentLoaded", () => {
     const saved = localStorage.getItem("savaData");
     if (saved) {
         profileNum.textContent = saved;
     }
 });
+
 window.addEventListener("DOMContentLoaded", () => {
     const familyName = localStorage.getItem("savaName");
     if (familyName) {

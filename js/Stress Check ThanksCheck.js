@@ -3,9 +3,6 @@ const thank = document.getElementById("thank");
 const toName = document.getElementById("name");
 const day = document.getElementById("day");
 
-console.log(day);
-
-
 window.addEventListener("DOMContentLoaded", () => {
     const sentName = localStorage.getItem("savaToName");
     if (sentName) {
@@ -33,5 +30,3 @@ window.addEventListener("DOMContentLoaded", () => {
         toName.textContent = `${savedName}より`;
     }
 });
-
-// thank.insertAdjacentHTML("beforeend", <p></p>);
