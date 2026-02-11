@@ -1,0 +1,69 @@
+html {
+    font-size: 62.5%;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C8F7FF;
+    border-top: #000 solid 2px;
+    padding: 10px 20px 0;
+
+    .logo {
+        width: 120px;
+    }
+
+    .hamburgerWrap {
+        #input {
+            width: auto;
+            display: none;
+        }
+    }
+
+    #input:checked~.nav {
+        right: -10%;
+        animation: 0.5s fadeIn;
+    }
+
+    #input:checked~.main {
+        opacity: 0.2;
+        animation: 0.5s;
+    }
+
+    .nav {
+        padding: 10px 30px 0 0;
+        position: fixed;
+        top: 100px;
+        right: -80%;
+        transition: right 0.3s ease;
+        width: 80%;
+        height: 60%;
+        background-color: #d9d9d9;
+        border-radius: 5%;
+        z-index: 10;
+    }
+
+    .accordion {
+        padding: 0 19px;
+        margin: 10px 0;
+
+        .accordionWrap {
+            font-size: 2rem;
+            animation: 0.2s ease;
+        }
+
+        .accordionContent {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.6rem;
+            margin: 20px 0;
+        }
+    }
+}
