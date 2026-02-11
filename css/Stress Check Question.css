@@ -7,6 +7,7 @@ html {
     height: 800px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 150px;
     background-color: #fff;
     background-image: linear-gradient(to bottom,
@@ -46,16 +47,6 @@ html {
         }
     }
 
-    .wrap {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        /* align-items: center; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-    }
-
     .mainWrapper {
         background-color: #fff;
         position: relative;
@@ -67,16 +58,32 @@ html {
         padding-top: 20px;
         border-radius: 2rem;
         box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        overflow: hidden;
 
 
-        #innerWrap {
+        .innerWrap {
             display: flex;
             width: 100%;
             gap: 10%;
-            /* margin: 0 10%; */
             overflow: scroll;
             transition: transform 0.4s ease;
+            /* transform: translateX(-1400px); */
+
+            /* .pos0 {
+                transform: translateX((0));
+            }
+
+            .pos1 {
+                background-color: tomato;
+                transform: translateX((100px));
+            }
+
+            .pos2 {
+                transform: translateX((200%));
+            }
+
+            .pos3 {
+                transform: translateX((300%));
+            } */
 
             .slider {
                 /* margin: auto 4%; */
@@ -84,7 +91,14 @@ html {
             }
 
             #slider1 {
+                transition: transform 0.4s ease;
+                /* opacity: 1; */
                 margin-left: 13%;
+            }
+
+            #slider2 {
+                margin: 0 13%;
+
             }
 
             #slider3 {
@@ -92,6 +106,7 @@ html {
             }
 
             .question {
+                flex: 0 0 100%;
                 margin: 2% 5%;
                 transition: transform 0.4s ease;
             }
@@ -133,8 +148,8 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 110px;
-                font-size: 2.4rem;
-                margin-bottom: 6rem;
+                margin-bottom: 7rem;
+                transition: transform 0.4s ease-in;
 
                 .content {
                     width: 270px;
@@ -183,9 +198,23 @@ html {
             }
         }
 
-        .active {
-            opacity: 0;
-            transform: translateX(-1400);
+        .pos0 {
+            transform: translateX((0));
+        }
+
+        .pos1 {
+            background-color: tomato;
+            transform: translateX(100%);
+        }
+
+        .pos2 {
+            background-color: #000;
+            transform: translateX(200%);
+        }
+
+        .pos3 {
+            background-color: #fff;
+            transform: translateX(300%);
         }
 
         .notes {
@@ -193,4 +222,5 @@ html {
             color: #99A1AF;
         }
     }
+
 }
