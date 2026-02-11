@@ -67,3 +67,148 @@ header {
         }
     }
 }
+
+.main {
+    margin: 20px 16px;
+
+    .profileWrap {
+        height: 100px;
+        margin: 0 5px;
+        border: #d9d9d9 solid 1px;
+        border-radius: 5px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        margin-bottom: 1rem;
+
+        .profileContent {
+            display: flex;
+            align-items: center;
+            padding: 15px 10px;
+
+            .profileImg {
+                width: 70px;
+                height: 70px;
+                border-radius: 100%;
+            }
+
+            .profileInfo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 15px;
+
+                #profileNum {
+                    font-size: 1.5rem;
+                    padding-left: 3px;
+                }
+
+                .profileName {
+                    font-size: 2.4rem;
+                }
+
+                .profileId {
+                    padding-left: 24px;
+                    height: 25px;
+                    line-height: 22px;
+                    position: relative;
+                    font-size: 1.4rem;
+                    text-decoration: none;
+                    color: #000;
+                    border: #d9d9d9 solid 1px;
+                    border-radius: 5px;
+
+                    &::before {
+                        margin: 0 auto;
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        padding: 0;
+                        width: 24px;
+                        height: 24px;
+                        background-image: url(../images/menu_icon.png);
+                    }
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 2rem 0 1rem 0.5rem;
+    }
+
+    .boardWrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin: 0 5px;
+
+        .boardTop {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .boardBottom {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .board {
+            display: flex;
+            flex-direction: column;
+            width: 170px;
+            height: 130px;
+            padding: 10px;
+            border: #d9d9d9 solid 1px;
+            box-shadow: 0 2px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+
+            .boardTitle {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 5px;
+                margin-bottom: 10px;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: normal;
+                }
+            }
+
+            .boardInner {
+                p {
+                    font-size: 4rem;
+                    font-weight: 500;
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+
+    .addTaskWrap {
+        margin: 20px 6px;
+        height: 60px;
+
+        .addTask {
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            font-size: 1.6rem;
+            background-color: #5d70ff;
+            border-radius: 10px;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: #3e51e2;
+            }
+        }
+    }
+}
