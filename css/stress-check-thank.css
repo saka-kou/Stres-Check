@@ -7,9 +7,11 @@ html {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
-    border-bottom: 1px solid #d0d0d0;
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px;
+    margin-top: 50px;
 }
 
 .thankBefore {
@@ -21,10 +23,7 @@ html {
     text-align: center;
     margin-top: 150px;
 
-    h1 {
-        font-size: 3rem;
-        margin-bottom: 50px;
-    }
+
 
     a {
         font-size: 2.5rem;
@@ -46,19 +45,15 @@ main {
     margin-bottom: 20px;
     margin: 0 50px 40px;
 
-    .title {
-        margin-bottom: 15px;
-    }
-
     h3 {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: normal;
         margin-bottom: 3px;
     }
 
     .input {
         width: 140px;
-        height: 35px;
+        height: 40px;
         padding: 6px;
         font-size: 2rem;
         border-radius: 10px;
@@ -88,7 +83,9 @@ main {
             width: 150px;
             height: 45px;
             font-size: 2rem;
-            background-color: #E2D89B;
+            background-image: linear-gradient(to right,
+                    rgb(212, 206, 158)0%,
+                    rgb(206, 202, 180)100%);
             color: #fff;
             border-radius: 10px;
         }
@@ -113,6 +110,18 @@ main {
         position: sticky;
         bottom: 0;
 
+        #home {
+            opacity: 0.5;
+        }
+
+        #news {
+            opacity: 0.5;
+        }
+
+        #administrator {
+            opacity: 0.5;
+        }
+
         li {
             display: flex;
             flex-direction: column;
@@ -120,7 +129,7 @@ main {
             list-style-type: none;
 
             p {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
 
                 a {
                     text-decoration: none;

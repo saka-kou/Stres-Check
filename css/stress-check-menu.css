@@ -145,7 +145,7 @@ header {
         padding: 0 20px;
 
         h3 {
-            font-size: 1.4rem;
+            font-size: 1.8rem;
             letter-spacing: -5%;
         }
     }
@@ -165,7 +165,7 @@ header {
         padding: 5px 20px 0;
 
         .backlog {
-            font-size: 1rem;
+            font-size: 1.4rem;
             color: #fff;
 
             span {
@@ -180,7 +180,7 @@ header {
             justify-content: space-between;
 
             p {
-                font-size: 1.4rem;
+                font-size: 1.6rem;
             }
 
         }
@@ -234,25 +234,26 @@ header {
         display: flex;
         justify-content: space-between;
         position: sticky;
+        align-items: center;
         background-color: #fff;
         top: 0;
-        padding: 10px 20px 5px;
+        padding: 5px 20px 5px;
 
         h3 {
-            font-size: 1.4rem;
+            font-size: 1.8rem;
         }
 
         .show::after {
             position: absolute;
             right: 33px;
             top: 25px;
-            transform: translateY(-60%) rotate(-90deg);
+            transform: translateY(-80%) rotate(-90deg);
             transition: transform 0.3s ease;
             pointer-events: none;
         }
 
         .show.open::after {
-            transform: translateY(-60%) rotate(0);
+            transform: translateY(-80%) rotate(0);
         }
     }
 
@@ -283,14 +284,11 @@ header {
                 align-items: center;
 
                 p {
-                    font-size: 1.4rem;
-
+                    font-size: 1.5rem;
                 }
             }
-
         }
     }
-
 }
 
 #taskSelect {
@@ -350,6 +348,18 @@ header {
         position: sticky;
         bottom: 0;
 
+        #thank {
+            opacity: 0.5;
+        }
+
+        #news {
+            opacity: 0.5;
+        }
+
+        #administrator {
+            opacity: 0.5;
+        }
+
         li {
             display: flex;
             flex-direction: column;
@@ -357,7 +367,7 @@ header {
             list-style-type: none;
 
             p {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
 
                 a {
                     text-decoration: none;
