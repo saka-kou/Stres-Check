@@ -7,6 +7,7 @@ const slides = document.querySelectorAll(".question").length;
 const nextBtn = document.querySelectorAll(".button")
 const nextPageBtn = document.getElementById("nextPageBtn");
 const compWrap = document.querySelector(".compWrap");
+const closeBtn = document.getElementById("closeBtn");
 let current = 0;
 
 console.log(contents);
@@ -33,3 +34,8 @@ nextPageBtn.addEventListener("click", () => {
     main.classList.add("none");
     compWrap.classList.remove("none")
 });
+
+closeBtn.addEventListener("click", () => {
+    main.classList.remove("none");
+    compWrap.classList.add("none");
+})
